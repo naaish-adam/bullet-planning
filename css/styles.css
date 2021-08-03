@@ -1,0 +1,560 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: Museo;
+  src: url("../fonts/MuseoSans-300.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Museo;
+  src: url("../fonts/MuseoSans_500.otf") format("opentype");
+  font-weight: bold;
+}
+
+body {
+  font-family: Museo;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.2rem;
+}
+
+.brand > img {
+  height: 75px;
+  padding-right: 15px;
+}
+
+.brand > h1 {
+  font-size: 1.5rem;
+  color: #134684;
+}
+
+.navbar > ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+}
+
+header.home > div > .navbar > ul {
+  width: 75%;
+}
+
+.nav-item > a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  padding: 1.7rem;
+
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-repeat: repeat, no-repeat;
+}
+
+header > div {
+  width: 65%;
+  margin: auto;
+}
+
+header.home {
+  position: relative;
+  height: 40vh;
+}
+
+header.home > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#phone-main {
+  position: absolute;
+  height: 50vh;
+  bottom: -12.5%;
+  right: 15%;
+}
+
+.main-text {
+  width: 65%;
+
+  margin-top: -5%;
+  text-align: center;
+}
+
+.main-text > h1 {
+  font-size: 2.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.main-text > p {
+  padding-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+main {
+  width: 55%;
+  margin: auto;
+  margin-bottom: 12rem;
+}
+
+.paragraph > h1 {
+  font-size: 1.75rem;
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+.paragraph > p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.2rem;
+}
+
+.paragraph > p:not(:last-child) {
+  padding-bottom: 1.5rem;
+}
+
+.paragraph:last-child {
+  margin-bottom: 4rem;
+}
+
+footer {
+  color: #808080;
+  position: relative;
+  height: 30vh;
+}
+
+footer > .image-container > img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: 30vh;
+  position: absolute;
+  z-index: -1;
+}
+
+footer > .main-container {
+  padding: 1.5rem;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+footer > .main-container > nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+footer > .main-container > nav > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.features {
+  margin-bottom: 4rem;
+}
+
+.features > .list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 2.5rem;
+}
+
+.features > .title {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.features > .sub {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2.75rem;
+}
+
+.card {
+  transition: 0.3s;
+  width: 20rem;
+  border-radius: 10px;
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.container {
+  padding: 5px 16px;
+}
+
+.container > h3 {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.container > p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.first {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.first > img {
+  flex: 1;
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.first > div {
+  flex: 1;
+}
+
+.first-paragraph > h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.first-paragraph > p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1rem;
+}
+
+.first-paragraph > p:not(:last-child) {
+  padding-bottom: 0.5rem;
+}
+
+.second > h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.second > div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.readmore-card {
+  width: 20rem;
+  height: 500px;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.readmore-card > img {
+  position: absolute;
+  height: 100%;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.readmore-card > .background {
+  position: absolute;
+  width: 80%;
+  height: 82.5%;
+  background-color: #a5e8f0;
+  top: 10%;
+  right: 0;
+  border-radius: 2px;
+}
+
+.readmore-content {
+  position: absolute;
+  background-color: white;
+  width: 65%;
+  height: 15rem;
+  padding: 1rem;
+  border: 2px solid #94cbdb;
+  bottom: 0;
+  left: 11.5%;
+  z-index: 3;
+}
+
+.readmore-content > h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.readmore-content > p {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.readmore-content > ul {
+  font-size: 0.8rem;
+  padding-left: 1rem;
+}
+
+.readmore-content > .readmore-button {
+  position: absolute;
+  display: block;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 2px;
+  background-color: #94cbdb;
+  bottom: -12%;
+  right: -8%;
+  user-select: none;
+  cursor: pointer;
+  z-index: 4;
+  text-decoration: none;
+  color: black;
+}
+
+.readmore-content > .readmore-button:hover {
+  transform: scale(1.025);
+  transition: 0.1s;
+}
+
+.third {
+  color: black;
+  position: absolute;
+  top: -60%;
+  left: 0;
+  z-index: 10;
+}
+
+.third > h1 {
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.third > p {
+  background-color: rgba(165, 232, 240, 0.2);
+  padding: 2rem 4rem;
+  width: 45%;
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  header > div {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .first {
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .features > .list {
+    justify-content: unset;
+  }
+
+  .features > .title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .features > .sub {
+    text-align: center;
+    font-size: 1.15rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .third > p {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  header.home > div > .navbar > ul {
+    width: 100%;
+  }
+
+  header > div > .navbar > ul {
+    justify-content: space-between;
+    gap: 0;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  header.home {
+    position: relative;
+    height: 40vh;
+  }
+
+  header.home > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #phone-main {
+    display: none;
+  }
+
+  .main-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-text > h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+  }
+
+  .main-text > p {
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .main-text > p:first-child {
+    padding-bottom: 10rem;
+  }
+  .third {
+    position: initial;
+    margin-top: -2rem;
+    margin-bottom: 8rem;
+  }
+
+  .second > div {
+    justify-content: center;
+  }
+
+  #site-title {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  header > div > .navbar > ul {
+    gap: 1rem;
+    flex-flow: column wrap;
+    width: 100%;
+  }
+
+  .readmore-card {
+    width: 10rem;
+    height: 400px;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+
+  .readmore-card > img {
+    position: absolute;
+    height: 70%;
+    object-fit: contain;
+    left: -35%;
+    z-index: 2;
+  }
+
+  .readmore-card > .background {
+    position: absolute;
+    width: 50%;
+    height: 72.5%;
+    background-color: #a5e8f0;
+    top: 10%;
+    right: -5%;
+    border-radius: 2px;
+  }
+
+  .readmore-content {
+    position: absolute;
+    background-color: white;
+    width: 80%;
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #94cbdb;
+
+    bottom: -8%;
+
+    left: 23%;
+    z-index: 3;
+  }
+
+  .readmore-content > h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .readmore-content > p {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .readmore-content > ul {
+    font-size: 0.8rem;
+    padding-left: 1rem;
+  }
+
+  .readmore-content > .readmore-button {
+    position: absolute;
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 2px;
+    background-color: #94cbdb;
+    bottom: -12%;
+    right: -8%;
+    user-select: none;
+    cursor: pointer;
+    z-index: 4;
+  }
+}
