@@ -364,6 +364,10 @@ footer > .main-container > nav > a {
   padding-bottom: 0.5rem;
 }
 
+.second {
+  margin-bottom: 4rem;
+}
+
 .second > h1 {
   text-align: center;
   font-weight: bold;
