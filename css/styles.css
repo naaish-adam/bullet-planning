@@ -14,8 +14,82 @@
   font-weight: bold;
 }
 
+.contact-us-section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.contact-us-border {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  z-index: -1;
+  top: 120px;
+  margin-left: 100px;
+  border: 2px solid #134684;
+}
+
+.contact-us-container {
+  display: flex;
+  align-items: center;
+  justify-self: flex-start;
+}
+
+.contact-us {
+  display: inline-block;
+  padding: 1.75rem;
+  background: #a5e8f0;
+  letter-spacing: 0.05rem;
+  position: relative;
+  margin: 10rem 5rem 10rem 0rem;
+}
+
+.contact-us-phone {
+  width: 19rem;
+}
+
+.contact-us > p {
+  font-size: 1.2rem;
+  color: rgba(46, 46, 46, 0.75);
+  margin-bottom: 2rem;
+}
+
+.contact-us > ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.contact-us ul > li:not(:last-child) {
+  padding-bottom: 1.5rem;
+}
+
+.contact-us ul > li > a {
+  text-decoration: none;
+  color: black;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-us ul > li > a:hover {
+  text-decoration: underline;
+}
+
+.contact-us ul > li > a > div:first-child {
+  width: 2.5rem;
+}
+
+.contact-us ul > li > a > img {
+  padding-right: 0.35rem;
+  width: 2.5rem;
+}
+
 body {
   font-family: Museo;
+  letter-spacing: 0.05rem;
 }
 
 .brand {
@@ -24,7 +98,7 @@ body {
   margin-bottom: 2.2rem;
 }
 
-.brand > img {
+.brand > a > img {
   height: 75px;
   padding-right: 15px;
 }
@@ -45,7 +119,6 @@ body {
   border-bottom: 2px solid black;
   box-sizing: border-box;
 }
-
 
 header.home > div > .navbar > ul {
   width: 75%;
@@ -116,6 +189,26 @@ main {
   margin-bottom: 12rem;
 }
 
+.google-play-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4.5rem;
+}
+
+#google-play-icon {
+  width: 12.5rem;
+}
+
+#why-bullet-journaling > p {
+  line-height: 1.9rem;
+}
+
+#what-is-bullet-journaling,
+#why-bullet-journaling {
+  width: 65%;
+  margin: auto;
+}
+
 .paragraph > h1 {
   font-size: 1.75rem;
   margin-top: 4rem;
@@ -126,6 +219,8 @@ main {
   text-align: justify;
   text-justify: inter-word;
   font-size: 1.2rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.05;
 }
 
 .paragraph > p:not(:last-child) {
@@ -136,28 +231,29 @@ main {
   margin-bottom: 4rem;
 }
 
-footer {
-  color: #808080;
-  position: relative;
-  height: 30vh;
+.paragraph > h3 {
+  margin-bottom: 1rem;
 }
 
-footer > .image-container > img {
-  width: 100%;
-  object-fit: cover;
-  object-position: top;
-  height: 30vh;
-  position: absolute;
-  z-index: -1;
+footer {
+  background-image: url("../images/footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  color: #808080;
+  position: relative;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 footer > .main-container {
   padding: 1.5rem;
   box-sizing: border-box;
-  height: 100%;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer > .main-container > nav {
@@ -229,10 +325,11 @@ footer > .main-container > nav > a {
 .container > p {
   text-align: justify;
   text-justify: inter-word;
+  line-height: 1.5rem;
 }
 
 .first {
-  margin-top: 4rem;
+  margin-top: 5rem;
   margin-bottom: 4rem;
   display: flex;
   align-items: flex-start;
@@ -354,29 +451,24 @@ footer > .main-container > nav > a {
   transition: 0.1s;
 }
 
-.third {
-  color: black;
-  position: absolute;
-  top: -60%;
-  left: 0;
-  z-index: 10;
-}
-
 .third > h1 {
   text-align: center;
   font-size: 1.75rem;
+  color: black;
 }
 
 .third > p {
+  letter-spacing: 0.05rem;
   background-color: rgba(165, 232, 240, 0.2);
   padding: 2rem 4rem;
-  width: 45%;
+  width: 40%;
   margin: auto;
   text-align: justify;
   text-justify: inter-word;
   font-size: 1.2rem;
-  line-height: 1.5;
+  line-height: 2;
   box-sizing: border-box;
+  color: rgba(46, 46, 46, 0.75);
 }
 
 .dropdown {
@@ -389,9 +481,9 @@ footer > .main-container > nav > a {
   position: absolute;
   text-align: left;
   background-color: rgba(165, 232, 240, 0.3);
-  min-width: 200px;
+  min-width: 225px;
   z-index: 20;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .dropdown-content > a {
@@ -399,7 +491,7 @@ footer > .main-container > nav > a {
   color: inherit;
   user-select: none;
   cursor: pointer;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .dropdown:hover .dropdown-content {
@@ -408,76 +500,161 @@ footer > .main-container > nav > a {
   justify-content: center;
 }
 
-@media only screen and (max-width: 1280px) {
+.icon {
+  display: inline-block;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.icon > a > img {
+  vertical-align: middle;
+  width: 2.5rem;
+}
+
+.privacy {
+  width: 45%;
+}
+
+@media only screen and (max-width: 1340px) {
+  .contact-us ul > li > a {
+    font-size: 0.8rem;
+  }
 
   .third {
-    position: unset;
-    margin-bottom: 4rem;
-  }
-
-  .third > h1 {
-    margin-top: 1rem;
-  }
-
-  .paragraph > h1 {
-    font-size: 1.5rem;
-  }
-  
-  .paragraph > p {
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 1rem;
-  }
-
-  #phone-main {
-    height: 60vh;
-    bottom: -17.5%;
-    right: 7.5%;
-  }
-
-  .readmore-card > img {
-    height: 80%;
-    object-position: center ;
-  }
-
-  header > div {
-    width: 75%;
-  }
-
-  main {
-    width: 75%;
-    margin-bottom: 0rem;
-  }
-
-  .first > img {
-    height: 400px;
-  }
-
-  #site-title {
-    font-size: 1.2rem;
-  }
-
-  .nav-item > a {
-    font-size: 1rem;
-  }
-
-  header.home {
-    height: 45vh;
-  }
-
-  .main-text {
-    margin-bottom: 1rem;
-  }
-
-  .main-text > h1 {
-    font-size: 1.75rem;
-  } 
-  .main-text > p {
-    font-size: 1.2rem;
+    margin-bottom: 5rem;
   }
 }
 
+.third {
+  position: unset;
+  margin-bottom: 6rem;
+}
+
+.third > h1 {
+  margin-top: 1rem;
+}
+
+.paragraph > h1 {
+  font-size: 1.5rem;
+}
+
+.paragraph > p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1rem;
+}
+
+#phone-main {
+  height: 60vh;
+  bottom: -17.5%;
+  right: 7.5%;
+}
+
+.readmore-card > img {
+  height: 80%;
+  object-position: center;
+}
+
+header > div {
+  width: 75%;
+}
+
+main {
+  width: 75%;
+  margin-bottom: 0rem;
+}
+
+.first > img {
+  height: 400px;
+}
+
+#site-title {
+  font-size: 1.2rem;
+}
+
+.nav-item > a {
+  font-size: 1rem;
+}
+
+header.home {
+  height: 45vh;
+}
+
+.main-text {
+  margin-bottom: 1rem;
+}
+
+.main-text > h1 {
+  font-size: 1.75rem;
+}
+.main-text > p {
+  font-size: 1.2rem;
+}
+
 @media only screen and (max-width: 768px) {
+  .contact-us-section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #what-is-bullet-journaling,
+  #why-bullet-journaling {
+    width: 100%;
+  }
+
+  .third {
+    margin-bottom: 4rem;
+  }
+
+  .contact-us-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+
+  .contact-us {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 4rem;
+  }
+
+  .contact-us-border {
+    display: none;
+  }
+
+  .contact-us ul > li > a {
+    display: flex;
+  }
+
+  .contact-us ul > li > a > div:first-child {
+    width: 20%;
+  }
+
+  .contact-us ul > li > a > div:last-child {
+    display: flex;
+    flex-flow: row wrap;
+    width: 75%;
+  }
+
+  .contact-us ul > li > a > div:first-child > img {
+    width: 2.5rem;
+  }
+
+  .contact-us ul > li > a > img {
+    width: 2.5rem;
+  }
+
+  .privacy {
+    width: 100%;
+  }
 
   header > div {
     width: 100%;
@@ -586,7 +763,6 @@ footer > .main-container > nav > a {
 }
 
 @media only screen and (max-width: 378px) {
-
   header > div > .navbar > ul {
     gap: 1rem;
     flex-flow: column wrap;
@@ -600,7 +776,7 @@ footer > .main-container > nav > a {
     margin-bottom: 5rem;
   }
 
-  .readmore-card >   {
+  .readmore-card > {
     position: absolute;
     height: 70%;
     object-fit: contain;
